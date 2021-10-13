@@ -81,9 +81,7 @@ class Store{
 
 }
 ```
-## Author
 
-- Website - [Add your name here](https://www.your-site.com)
 
 
 
