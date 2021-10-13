@@ -13,7 +13,7 @@
 
 ## Overview
 
-This is a library app built using plain/vanilla JavaScript
+This is a book listing app built using plain/vanilla JavaScript
 ### The challenge
 
 Users should be able to:
