@@ -24,13 +24,15 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./images/img1.png)
+![](./images/img2.png)
+![](./images/img3.png)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/NandodkarAmogh/Library-App](https://github.com/NandodkarAmogh/Library-App)
+- Live Site URL: [https://vanillajslibrary.netlify.app](https://vanillajslibrary.netlify.app)
 
 ## My process
 
