@@ -1,9 +1,10 @@
 //Book Class => to represent a book
 class Book{
-  constructor(title,author,isbn){
+  constructor(title,author,isbn,status){
       this.title=title;
       this.author=author;
       this.isbn=isbn;
+      this.status=status;
   } 
 }
 
@@ -48,12 +49,14 @@ class UI {
         <td scope="row">${book.title}</td>
        <td>${book.author}</td>
        <td>${book.isbn}</td>
+       <td>${book.status}</td>
       <td><a href="#" class="btn btn-danger btn-sm delete">X</a></td>
     `;
 
     list.appendChild(row);
     }
 
+    
     static deleteBook(el){
         if(el.classList.contains('delete')){
             el.parentElement.parentElement.remove()
@@ -76,6 +79,7 @@ class UI {
         document.querySelector('#title').value = '';
         document.querySelector('#author').value = '';
         document.querySelector('#isbn').value = '';
+        document.querySelector('#status').value = 'Unread';
     }
 }
 
@@ -125,6 +129,7 @@ document.querySelector('#book-form').addEventListener('submit', (e) =>{
     const title = document.querySelector('#title').value;
     const author = document.querySelector('#author').value;
     const isbn = document.querySelector('#isbn').value;
+    const status = document.querySelector('#status').value;
 
     //validate
     if(title === '' || author ==='' || isbn ==='' ){
@@ -132,7 +137,7 @@ document.querySelector('#book-form').addEventListener('submit', (e) =>{
     }
     else{
         //instantiate book
-        const book = new Book(title,author,isbn);
+        const book = new Book(title,author,isbn,status);
         console.log(book);
 
         //add book to UI
